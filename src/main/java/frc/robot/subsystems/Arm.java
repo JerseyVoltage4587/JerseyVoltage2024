@@ -44,13 +44,13 @@ public class Arm extends SubsystemBase {
   }
 
   public void armUp() {
-    armMotorLeft.set(TalonSRXControlMode.PercentOutput, .6);
-    armMotorRight.set(TalonSRXControlMode.PercentOutput, .6);
+    armMotorLeft.set(TalonSRXControlMode.PercentOutput, -.6);
+    armMotorRight.set(TalonSRXControlMode.PercentOutput, -.6);
   }
 
   public void armDown() {
-    armMotorLeft.set(TalonSRXControlMode.PercentOutput, -.6);
-    armMotorRight.set(TalonSRXControlMode.PercentOutput, -.6);
+    armMotorLeft.set(TalonSRXControlMode.PercentOutput, .6);
+    armMotorRight.set(TalonSRXControlMode.PercentOutput, .6);
   }
 
   public void zeroArmMotors() {
